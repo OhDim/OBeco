@@ -1,0 +1,225 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B89CC1F7-BE86-427F-86B5-FAA8A0EB6951}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>OBeco</RootNamespace>
+    <AssemblyName>OBeco</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FontAwesome.Sharp, Version=6.3.0.0, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f, processorArchitecture=MSIL">
+      <HintPath>..\packages\FontAwesome.Sharp.6.3.0\lib\net472\FontAwesome.Sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Acervo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Acervo.Designer.cs">
+      <DependentUpon>Acervo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddLivro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddLivro.Designer.cs">
+      <DependentUpon>AddLivro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Alunos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Alunos.Designer.cs">
+      <DependentUpon>Alunos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BibliotecaDataSet12.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BibliotecaDataSet12.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BibliotecaDataSet21.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BibliotecaDataSet21.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BibliotecaDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BibliotecaDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CadastrarAluno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CadastrarAluno.Designer.cs">
+      <DependentUpon>CadastrarAluno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CadastrarFunc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CadastrarFunc.Designer.cs">
+      <DependentUpon>CadastrarFunc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Emprestimo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Emprestimo.Designer.cs">
+      <DependentUpon>Emprestimo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="globals.cs" />
+    <Compile Include="Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Perfil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Perfil.Designer.cs">
+      <DependentUpon>Perfil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Acervo.resx">
+      <DependentUpon>Acervo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddLivro.resx">
+      <DependentUpon>AddLivro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Alunos.resx">
+      <DependentUpon>Alunos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CadastrarAluno.resx">
+      <DependentUpon>CadastrarAluno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CadastrarFunc.resx">
+      <DependentUpon>CadastrarFunc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Emprestimo.resx">
+      <DependentUpon>Emprestimo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Perfil.resx">
+      <DependentUpon>Perfil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="BibliotecaDataSet12.xsc">
+      <DependentUpon>BibliotecaDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="BibliotecaDataSet12.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BibliotecaDataSet12.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BibliotecaDataSet12.xss">
+      <DependentUpon>BibliotecaDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="BibliotecaDataSet21.xsc">
+      <DependentUpon>BibliotecaDataSet21.xsd</DependentUpon>
+    </None>
+    <None Include="BibliotecaDataSet21.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BibliotecaDataSet21.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BibliotecaDataSet21.xss">
+      <DependentUpon>BibliotecaDataSet21.xsd</DependentUpon>
+    </None>
+    <None Include="BibliotecaDataSet3.xsc">
+      <DependentUpon>BibliotecaDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="BibliotecaDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BibliotecaDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BibliotecaDataSet3.xss">
+      <DependentUpon>BibliotecaDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rectangle 22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rectangle 20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\450.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group 9.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
